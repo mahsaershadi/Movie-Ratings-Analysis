@@ -1,6 +1,6 @@
 # Movie Ratings Analysis
 
-A beginner-friendly data analysis project using Python, NumPy, and Pandas to explore movie ratings and extract basic insights from the MovieLens dataset.
+A data analysis project using Python, NumPy, and Pandas to explore movie ratings and extract basic insights from the MovieLens dataset.
 
 ## Overview
 
@@ -61,36 +61,6 @@ The two datasets are connected through the `movieId` column.
 - **Python**
 - **NumPy**
 - **Pandas**
-- **Git / GitHub**
-
-### Python
-
-Used for the overall program structure, variables, conditions, and output.
-
-### NumPy
-
-Used for numerical calculations such as:
-
-- Mean
-- Median
-- Standard deviation
-- Minimum
-- Maximum
-
-### Pandas
-
-Used for:
-
-- Reading CSV files
-- Exploring datasets
-- Filtering records
-- Sorting data
-- Handling missing values
-- Merging datasets
-- Grouping data
-- Calculating statistics
-
----
 
 ## Project Structure
 

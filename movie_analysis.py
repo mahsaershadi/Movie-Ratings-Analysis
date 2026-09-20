@@ -2,18 +2,12 @@ import numpy as np
 import pandas as pd
 
 
-# ==========================================
-# 1. LOAD DATASETS
-# ==========================================
-
+#load the datasets
 movies = pd.read_csv("data/movies.csv")
 ratings = pd.read_csv("data/ratings.csv")
 
 
-# ==========================================
-# 2. EXPLORE THE DATASETS
-# ==========================================
-
+#explore the datasets
 print("===== MOVIES DATASET =====")
 print(movies.head())
 
@@ -34,10 +28,7 @@ print("\n===== RATING COLUMNS =====")
 print(ratings.columns)
 
 
-# ==========================================
-# 3. CHECK DATASET INFORMATION
-# ==========================================
-
+#check the data types of each column in both datasets
 print("\n===== MOVIES INFO =====")
 movies.info()
 
@@ -45,10 +36,7 @@ print("\n===== RATINGS INFO =====")
 ratings.info()
 
 
-# ==========================================
-# 4. CHECK MISSING VALUES
-# ==========================================
-
+#check for missing values in both datasets
 print("\n===== MISSING VALUES =====")
 
 print("Movies:")
@@ -58,10 +46,7 @@ print("\nRatings:")
 print(ratings.isnull().sum())
 
 
-# ==========================================
-# 5. BASIC NUMPY ANALYSIS
-# ==========================================
-
+#basic statistics for ratings
 rating_array = ratings["rating"].to_numpy()
 
 mean_rating = np.mean(rating_array)
@@ -70,10 +55,8 @@ std_rating = np.std(rating_array)
 minimum_rating = np.min(rating_array)
 maximum_rating = np.max(rating_array)
 
-# ==========================================
-# 6. FILTER RATINGS ABOVE 4
-# ==========================================
 
+#filter ratings above 4
 high_ratings = ratings[ratings["rating"] > 4]
 
 print("\n===== RATINGS ABOVE 4 =====")
